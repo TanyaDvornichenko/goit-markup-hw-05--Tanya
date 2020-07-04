@@ -793,6 +793,32 @@ button {
   margin-right: auto; 
 }
 
+.gallery-img {
+  position: relative;
+    display: flex;    
+    overflow: hidden;
+ }
+
+  .gallery-link .pf-text {
+    position: absolute;
+    
+    padding: 0px 24px;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    background: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+    font-size: 18px;
+    line-height: 1.56;
+
+    transform: translate(0, +100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
 .flex-element:hover   {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -800,6 +826,12 @@ button {
 .gallery-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
+.gallery-link:focus .pf-text,
+.gallery-link:hover .pf-text {
+  transform: translate(0, 0);
+}
+
 
 .flex-gallery {
   display: flex;
@@ -819,6 +851,8 @@ button {
 }
 
 .flex-element {
+  position: relative;
+
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
