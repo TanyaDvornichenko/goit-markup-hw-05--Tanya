@@ -303,7 +303,14 @@ img {
   margin-right: 30px;
 }
 
+.solutions-block {
+  position: relative;
+}
+
 .solutions-title {
+  position: absolute;
+  bottom: 0;
+  
   display: block;
   text-decoration: none;
 
@@ -311,9 +318,10 @@ img {
   margin-bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-
+  
   border-radius: 0px 0px 4px 4px;
   height: 70px;
+  width: 370px;
 
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
